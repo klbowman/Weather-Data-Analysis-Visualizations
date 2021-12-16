@@ -20,20 +20,15 @@ Citipy is used to generate a list of 1,500 citites from randomly selected latitu
   <img src="https://user-images.githubusercontent.com/74067302/146285156-99884cd5-b203-42f6-ac11-eab5cf7bc56a.png" width="400" />
 </p>
 
+## VacationPy Description
+
+This Python script (VacationPy.ipynb) uses jupyter-gmaps and the Google Places API to create a heat map that displays the humidity for every city from the WeatherPy dataset described above. 
+
+The WeatherPy dataframe is imported into the Jupyter Notebook file (VacationPy.ipynb) from the Outputs directory (city_data.csv). Using gmaps, a map is created with the latitude and longitude coordinates for each city, and heatmap layer displaying humidity data is added. A new dataframe containing cities with "ideal weather" (temperature 70-80 degrees F, windspeed < 10 mph, 0 cloudiness) is created and the Google Places API is used to find the first hotel for each city located within 5000 meters of each city coordinate.
 
 
 
-The dashboard includes a drop-down menu that displays the numerical code for each individual sample. When a sample is selected, the “Demographic Info” panel is populated with metadata and the following three charts are populated with data:
-* Bar graph displaying the top 10 OTUs by count
-* Gauge plot showing the belly button scrubs per week
-* Bubble plot displaying OTU counts for the entire sample
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/74067302/145615550-98e49162-44c9-4e39-9050-ba837dc42863.png" alt="Dashboard Image"/>
-</p>
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/74067302/145615561-5fc19f35-646b-47aa-9f63-4a93a495efe5.png" alt="Dashboard Image"/>
-</p>
+A map is created using gmaps and the latitude and longitude coordinates for each city in the dataframe, and a heatmap 
 
 ## Getting Started
 
