@@ -1,6 +1,6 @@
 # Weather Data Visualizations & Maps
 
-Weather data analysis and visualization using charts and interactive maps.
+Weather data analysis and visualization using charts and map layers.
 
 ## WeatherPy Description
 
