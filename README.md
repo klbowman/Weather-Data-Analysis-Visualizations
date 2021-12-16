@@ -5,9 +5,12 @@
 
 Weather data analysis and visualization using charts and interactive maps.
 
-## Description
+## WeatherPy Description
 
-This repository is designed to visualize taxonomic data using charts, and display metadata in an organized panel. The [data](http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/) comes from a study that sequenced the microbiome of 153 human belly buttons (Hulcr et al., 2012), and is stored in the samples.json file. Individual samples are identified by a numerical code and accompanied by metadata including age, gender, ethnicity, etc. Operational taxonomic units (OTUs) id numbers and counts are provided for each sample.
+This Python script (WeatherPy.ipynb) is used to visualize the weather of 1,500 cities across the world of varying distance from the equator, using data from the OpenWeatherMap API. The goal is to visualize weather trends in cities at varying distances from the equator. 
+
+Citipy is used to generate a list of 1,500 citites from randomly selected latitude and longitude coordinates, then API calls are used to collect the weather data for each city. Matplotlib and scipy.stats are used to plot and model the relationship between latitude and four weather parameters (temperature, humidity, cloudiness, windspeed) for cities in the northern and southern hemispheres. Images of each plot, with and without regression lines, are stored in the **Outputs** directory.
+
 
 The dashboard includes a drop-down menu that displays the numerical code for each individual sample. When a sample is selected, the “Demographic Info” panel is populated with metadata and the following three charts are populated with data:
 * Bar graph displaying the top 10 OTUs by count
@@ -25,9 +28,13 @@ The dashboard includes a drop-down menu that displays the numerical code for eac
 
 ### Technologies Used 
 
-* JavaScript
-* HTML
-* CSS
+* Jupyter Notebook
+* Python
+* Pandas
+* Matplotlib
+* NumPy
+* citypy
+* scipy.stats
 
 ### Installing
 
