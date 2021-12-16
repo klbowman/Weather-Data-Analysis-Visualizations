@@ -1,6 +1,3 @@
-# python-api-challenge
-![image](https://user-images.githubusercontent.com/74067302/134268056-0916a403-a4c2-42ed-afa1-647a0737a419.png)
-
 # Weather Data Visualizations & Maps
 
 Weather data analysis and visualization using charts and interactive maps.
@@ -24,11 +21,10 @@ Citipy is used to generate a list of 1,500 citites from randomly selected latitu
 
 This Python script (VacationPy.ipynb) uses jupyter-gmaps and the Google Places API to create a heat map that displays the humidity for every city from the WeatherPy dataset described above. 
 
-The WeatherPy dataframe is imported into the Jupyter Notebook file (VacationPy.ipynb) from the Outputs directory (city_data.csv). Using gmaps, a map is created with the latitude and longitude coordinates for each city, and heatmap layer displaying humidity data is added. A new dataframe containing cities with "ideal weather" (temperature 70-80 degrees F, windspeed < 10 mph, 0 cloudiness) is created and the Google Places API is used to find the first hotel for each city located within 5000 meters of each city coordinate.
-
-
-
-A map is created using gmaps and the latitude and longitude coordinates for each city in the dataframe, and a heatmap 
+The WeatherPy dataframe is imported into the Jupyter Notebook file (VacationPy.ipynb) from the Outputs directory (city_data.csv). Using gmaps, a map is created with the latitude and longitude coordinates for each city, and heatmap layer displaying humidity data is added. A new dataframe containing cities with "ideal weather" (temperature 70-80 degrees F, windspeed < 10 mph, 0 cloudiness) is created and the Google Places API is used to find the first hotel for each city located within 5000 meters of each city coordinate. A marker layer is added to the map, with pins that list hotel name, city, and country. 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74067302/134268056-0916a403-a4c2-42ed-afa1-647a0737a419.png"/>
+</p>
 
 ## Getting Started
 
